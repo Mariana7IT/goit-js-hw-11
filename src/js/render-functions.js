@@ -22,14 +22,13 @@ export function renderImages(images) {
           width="360"
           src="${img.largeImageURL}" 
           alt="${img.tags}" 
-          />
-          
+        />
       </a>
       <ul class='description'>
-      <li><strong>Likes</strong> ${img.likes}</li>
-      <li><strong>Views</strong> ${img.views}</li>
-      <li><strong>Comments</strong> ${img.comments}</li>
-      <li><strong>Downloads</strong> ${img.downloads}</li>
+        <li><strong>Likes</strong> ${img.likes}</li>
+        <li><strong>Views</strong> ${img.views}</li>
+        <li><strong>Comments</strong> ${img.comments}</li>
+        <li><strong>Downloads</strong> ${img.downloads}</li>
       </ul>
     </li>`
     )
