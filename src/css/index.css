@@ -157,7 +157,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
 .gallery-item {
@@ -167,7 +167,7 @@ button:hover {
 
 .gallery-link {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between; 
   width: 100%;
@@ -184,4 +184,37 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.info-title {
+  display: flex;
+  flex-basis: calc((100% - 24px) / 4);
+  margin-left:20px ;
+  margin-right: 24px;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--montserrat);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.description {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between; 
+  align-items: center; 
+}
+.info-text {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--montserrat);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }

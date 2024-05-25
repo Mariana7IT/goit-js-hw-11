@@ -25,11 +25,11 @@ export function renderImages(images) {
         />
       </a>
       <ul class='description'>
-        <li><strong>Likes</strong> ${img.likes}</li>
-        <li><strong>Views</strong> ${img.views}</li>
-        <li><strong>Comments</strong> ${img.comments}</li>
-        <li><strong>Downloads</strong> ${img.downloads}</li>
-      </ul>
+  <li class="info-title"><strong>Likes</strong><span class="info-text"> ${img.likes}</span></li>
+  <li class="info-title"><strong>Views</strong><span class="info-text"> ${img.views}</span></li>
+  <li class="info-title"><strong>Comments</strong><span class="info-text"> ${img.comments}</span></li>
+  <li class="info-title"><strong>Downloads</strong><span class="info-text"> ${img.downloads}</span></li>
+</ul>
     </li>`
     )
     .join('');
