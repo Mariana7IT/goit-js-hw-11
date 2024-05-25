@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-b20c67ea.js">
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-453330c5.css">
-  </head>
-  <body>
-    <body>
-      <div class="forma">
-        <input type="text" id="name-input" placeholder="Search images..." />
-      <button type="submit">Search</button></div>
-      <ul class="gallery"></ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;900&display=swap">
+  
+  <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-5c957d73.js">
+  <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+  <link rel="stylesheet" href="/goit-js-hw-11/assets/index-1d1197e9.css">
+</head>
+<body>
+  <header>
+    <form class="form">
+      <input class="search-input" type="text" id="name-input" placeholder="Search images..." required>
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <div class="container">
+      <ul class="gallery">
+        
+      </ul>
+      <span id="loader" class="loader" style="display: none;"></span>
+    </div>
 
-      
-    </body>
-</html>
+    
+  </main>
+  </body>
+  </html>
