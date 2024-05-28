@@ -85,7 +85,17 @@ border: 1px solid #000;
 #name-input::placeholder{
     color: #808080;
 }
+#name-input:not(:placeholder-shown) {
+  border-color: #4E75FF;
+}
 
+/* .input-form:valid {
+  border: 1px solid #3CBC81;
+}
+
+.input-form:not(:placeholder-shown):invalid {
+  border: 1px solid #E74A3B; */
+/* } */
 button {
   width: 91px;
   height: 40px;
@@ -101,7 +111,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, button:focus{
     border-radius: 8px;
     background: #6C8CFF;
 }
@@ -203,18 +213,10 @@ button:hover {
 }
     
 @keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% {    transform: rotate(0deg);  }
+  100% {    transform: rotate(360deg);  }
 } 
 @keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
+  0% {    transform: rotate(0deg);  }
+  100% {    transform: rotate(-360deg);  }
 } 
